@@ -13,9 +13,9 @@ export default function Hero() {
         <h1 className="font-display-lg text-display-lg text-white mb-6">TU MARCA, NUESTRA IMPRESIÓN</h1>
         <p className="font-body-lg text-body-lg text-secondary-fixed mb-8 leading-relaxed">Transformamos tus ideas en realidades físicas de alta calidad. Desde papelería comercial hasta soluciones de gran formato.</p>
         <div className="flex gap-4">
-          <button className="bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-label-md text-label-md hover:brightness-110 transition-all flex items-center gap-2">
+          {/* <button className="bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-label-md text-label-md hover:brightness-110 transition-all flex items-center gap-2">
             Ver Catálogo <span className="material-symbols-outlined">arrow_forward</span>
-          </button>
+          </button> */}
         </div>
       </div>
     </section>
