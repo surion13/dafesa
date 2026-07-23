@@ -1,4 +1,4 @@
-export default function Navbar() {
+export default function Navbar({ whatsappUrl }) {
   return (
     <header className="sticky top-0 z-50 flex justify-between items-center w-full px-[var(--spacing-margin-desktop)] h-20 bg-surface/90 backdrop-blur-md border-b border-outline-variant">
       <div className="text-headline-md font-headline-lg text-primary tracking-tight">
@@ -9,9 +9,14 @@ export default function Navbar() {
         <a className="text-secondary hover:text-primary transition-colors font-label-md text-label-md" href="#nosotros">Nosotros</a>
         <a className="text-secondary hover:text-primary transition-colors font-label-md text-label-md" href="#contacto">Contacto</a>
       </nav>
-      <button className="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:bg-surface-tint transition-all active:scale-95">
+      <a 
+        href={whatsappUrl} 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:bg-surface-tint transition-all active:scale-95 inline-flex items-center justify-center cursor-pointer"
+      >
         Cotizar
-      </button>
+      </a>
     </header>
   );
 }

@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden rounded-xl h-[600px] flex items-center bg-on-surface">
+    <section id="servicios" className="relative overflow-hidden rounded-xl h-[600px] flex items-center bg-on-surface">
       <div className="absolute inset-0 opacity-40">
         <img 
           className="w-full h-full object-cover" 

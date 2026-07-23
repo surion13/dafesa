@@ -1,6 +1,11 @@
 export default function Footer() {
+  // Reemplaza '573004345839' con tu número de teléfono real en formato internacional
+  const phoneNumber = "573004345839"; 
+  const message = "Hola, estoy interesado en sus servicios de impresión y me gustaría cotizar un proyecto.";
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
   return (
-    <footer className="w-full py-12 px-[var(--spacing-margin-desktop)] flex flex-col md:flex-row justify-between items-start gap-[var(--spacing-gutter)] bg-on-surface text-white" id="contacto">
+    <footer id="contacto" className="w-full py-12 px-[var(--spacing-margin-desktop)] flex flex-col md:flex-row justify-between items-start gap-[var(--spacing-gutter)] bg-on-surface text-white" id="contacto">
       <div className="space-y-6 max-w-sm">
         <div className="text-headline-md font-headline-lg text-primary-fixed tracking-tight">
           Dafesa Impresores
@@ -32,9 +37,14 @@ export default function Footer() {
         </div>
       </div>
       <div className="w-full md:w-auto flex flex-col items-start md:items-end gap-4 mt-8 md:mt-0">
-        <button className="bg-primary-container text-on-primary-container px-6 py-3 rounded-full flex items-center gap-2 font-bold hover:scale-105 transition-transform">
+        <a 
+          href={whatsappUrl} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="bg-primary-container text-on-primary-container px-6 py-3 rounded-full flex items-center gap-2 font-bold hover:scale-105 transition-transform cursor-pointer"
+        >
           <span className="material-symbols-outlined">chat</span> Contáctanos ahora
-        </button>
+        </a>
         <p className="text-label-sm text-secondary-fixed-dim">© 2024 Dafesa Impresores. Todos los derechos reservados.</p>
       </div>
     </footer>
