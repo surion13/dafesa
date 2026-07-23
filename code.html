@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dafesa Impresores | Tu marca, nuestra impresión</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#6cba7c",
+                        "on-surface": "#1a1c1c",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#91da40",
+                        "surface-bright": "#f9f9f9",
+                        "on-secondary-fixed-variant": "#474744",
+                        "secondary-fixed": "#e5e2de",
+                        "surface-dim": "#dadada",
+                        "primary-fixed": "#acf75a",
+                        "on-background": "#1a1c1c",
+                        "tertiary-fixed": "#a4f5b1",
+                        "surface-container-high": "#e8e8e8",
+                        "outline": "#727a65",
+                        "background": "#f9f9f9",
+                        "inverse-surface": "#2f3131",
+                        "surface": "#f9f9f9",
+                        "on-primary-fixed-variant": "#2d5000",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#0f2000",
+                        "on-secondary-container": "#656461",
+                        "surface-tint": "#3d6a00",
+                        "on-secondary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#c8c6c3",
+                        "on-tertiary-fixed": "#00210a",
+                        "surface-container-low": "#f3f3f3",
+                        "inverse-on-surface": "#f1f1f1",
+                        "on-secondary-fixed": "#1c1c1a",
+                        "secondary": "#5f5e5c",
+                        "on-tertiary-container": "#00491f",
+                        "surface-variant": "#e2e2e2",
+                        "tertiary-fixed-dim": "#89d897",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c1cab2",
+                        "on-tertiary-fixed-variant": "#005224",
+                        "tertiary": "#1c6c37",
+                        "primary-container": "#76bc21",
+                        "on-surface-variant": "#414937",
+                        "secondary-container": "#e5e2de",
+                        "primary-fixed-dim": "#91da40",
+                        "surface-container": "#eeeeee",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#274600",
+                        "primary": "#3d6a00",
+                        "surface-container-highest": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "base": "8px",
+                        "margin-desktop": "40px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "body-md": ["Work Sans"],
+                        "body-lg": ["Work Sans"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "label-md": ["Work Sans"],
+                        "label-sm": ["Work Sans"],
+                        "headline-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .custom-bullet {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #76bc21;
+            margin-right: 8px;
+            border-radius: 2px;
+        }
+        .perspective-card:hover {
+            transform: translateY(-4px) rotateX(2deg) rotateY(2deg);
+            transition: all 0.3s ease;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(224, 224, 224, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex justify-between items-center w-full px-margin-desktop h-20 bg-surface/90 backdrop-blur-md border-b border-outline-variant">
+<div class="text-headline-md font-headline-lg text-primary tracking-tight">
+            Dafesa Impresores
+        </div>
+<nav class="hidden md:flex gap-8">
+<a class="text-primary font-bold border-b-2 border-primary font-label-md text-label-md" href="#servicios">Servicios</a>
+<a class="text-secondary hover:text-primary transition-colors font-label-md text-label-md" href="#nosotros">Nosotros</a>
+<a class="text-secondary hover:text-primary transition-colors font-label-md text-label-md" href="#contacto">Contacto</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:bg-surface-tint transition-all active:scale-95">
+            Cotizar
+        </button>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop space-y-24 py-12">
+<!-- Hero Section -->
+<section class="relative overflow-hidden rounded-xl h-[600px] flex items-center bg-on-surface">
+<div class="absolute inset-0 opacity-40">
+<img class="w-full h-full object-cover" data-alt="A professional printing workshop with high-end industrial machinery in motion, blurred backgrounds with sharp details of paper rolls and vibrant ink splashes in corporate green. The lighting is crisp and studio-quality, emphasizing technical precision and quality. The overall aesthetic is modern, clean, and industrial with a premium feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjYlPhChPmYDp0yNumicYDLi2rO0LJ2Q05gmxfRIaxdWkymyoKkELyGJd8aIT1AegUx_Y3GkDUr2Jjk_vxobKeY-YtI3vbOPTSgVpMKB3-LslG1iaoQ4d-McSuTPyTBwBOVAFQKxQPuxYGBS13OR2OicF2rwZHRSlrpTbR79L8ErobdwAd8ZWPJ7JwRcmCVS9laRICNjNdZwrlB6wwHmUZx2NFbDKeC9bLeM09OJReOg3I9GIjcZL9"/>
+</div>
+<div class="relative z-10 px-margin-desktop max-w-2xl">
+<span class="inline-block px-4 py-1 bg-primary-container text-on-primary-container rounded-full font-label-md text-label-md mb-6">Excelencia en Impresión</span>
+<h1 class="font-display-lg text-display-lg text-white mb-6">TU MARCA, NUESTRA IMPRESIÓN</h1>
+<p class="font-body-lg text-body-lg text-secondary-fixed mb-8 leading-relaxed">Transformamos tus ideas en realidades físicas de alta calidad. Desde papelería comercial hasta soluciones de gran formato.</p>
+<div class="flex gap-4">
+<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-label-md text-label-md hover:brightness-110 transition-all flex items-center gap-2">
+                        Ver Catálogo <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 2: Commercial Printing & Office -->
+<section class="space-y-12" id="servicios">
+<div class="text-center max-w-3xl mx-auto space-y-4">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Papelería Comercial &amp; Oficina</h2>
+<p class="text-secondary font-body-md">Soluciones integrales para la gestión administrativa y la identidad corporativa de tu negocio.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-white p-8 rounded-xl border border-outline-variant hover:border-primary/30 transition-all group">
+<div class="w-12 h-12 bg-primary-container/20 text-primary flex items-center justify-center rounded-lg mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">receipt_long</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Administrativo</h3>
+<ul class="space-y-3">
+<li class="flex items-center"><span class="custom-bullet"></span>Egresos e Ingresos</li>
+<li class="flex items-center"><span class="custom-bullet"></span>Facturas &amp; Talonarios</li>
+<li class="flex items-center"><span class="custom-bullet"></span>Contratos</li>
+<li class="flex items-center"><span class="custom-bullet"></span>Formularios</li>
+</ul>
+</div>
+<div class="bg-white p-8 rounded-xl border border-outline-variant hover:border-primary/30 transition-all group">
+<div class="w-12 h-12 bg-primary-container/20 text-primary flex items-center justify-center rounded-lg mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">folder_open</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Identidad</h3>
+<ul class="space-y-3">
+<li class="flex items-center"><span class="custom-bullet"></span>Sobres</li>
+<li class="flex items-center"><span class="custom-bullet"></span>Folletos &amp; Plegables</li>
+<li class="flex items-center"><span class="custom-bullet"></span>Folders &amp; Carpetas</li>
+<li class="flex items-center"><span class="custom-bullet"></span>Tarjetas &amp; Flyers</li>
+</ul>
+</div>
+<div class="bg-white p-8 rounded-xl border border-outline-variant hover:border-primary/30 transition-all group">
+<div class="w-12 h-12 bg-primary-container/20 text-primary flex items-center justify-center rounded-lg mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">menu_book</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Editorial</h3>
+<ul class="space-y-3">
+<li class="flex items-center"><span class="custom-bullet"></span>Libros &amp; Revistas</li>
+<li class="flex items-center"><span class="custom-bullet"></span>Manuales &amp; Cartillas</li>
+<li class="flex items-center"><span class="custom-bullet"></span>Cuadernos Empresariales</li>
+<li class="flex items-center"><span class="custom-bullet"></span>Catálogos &amp; Portafolios</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Section 3: Merchandising & Gifts (Bento Style) -->
+<section class="space-y-12">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Merchandising &amp; Regalos</h2>
+<div class="bento-grid">
+<div class="col-span-12 md:col-span-4 bg-white border border-outline-variant p-6 rounded-xl flex flex-col justify-between">
+<div>
+<h4 class="font-headline-md text-headline-md mb-2">Textiles</h4>
+<p class="text-secondary text-sm mb-4">Prendas personalizadas de alta duración.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container text-on-surface rounded-full text-xs">Camisetas</span>
+<span class="px-3 py-1 bg-surface-container text-on-surface rounded-full text-xs">Gorras</span>
+<span class="px-3 py-1 bg-surface-container text-on-surface rounded-full text-xs">Tulas</span>
+<span class="px-3 py-1 bg-surface-container text-on-surface rounded-full text-xs">Bolsas</span>
+</div>
+</div>
+<div class="mt-8 h-48 relative rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close-up of a high-quality embroidered logo on a black textile surface, featuring vibrant green thread. The lighting is soft and artistic, showing the texture of the fabric and the precision of the stitching. Minimalist, premium fashion brand photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAQc7bx6cQvPqY4q1A78zPZ7PM4FUU6-_wRBceAih8-M4U6CbYo-kfCgD7D5LEkEULvWTrf42DyuH14Cx8484phWPnizl3H4igRQDh5lCrZIH0GBeuo3NiSm6FuUFI7g7150eNtbpLENPHR4l7PR1btQC1EES3odWA0oVasll5P3vi2IdHQ9XRA3_0d1UbB89y6hrBBiE5Bq52PidbFOeBOGwtTEh9xHKLvimXIGPcm8dl2aw01l5V"/>
+</div>
+</div>
+<div class="col-span-12 md:col-span-8 bg-on-surface text-white p-8 rounded-xl relative overflow-hidden flex flex-col justify-center">
+<div class="relative z-10 max-w-md">
+<h4 class="font-headline-lg text-headline-lg mb-4">Detalles que Marcan</h4>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary-container">stars</span>
+<div><p class="font-bold">Mugs &amp; Pads</p><p class="text-xs text-secondary-fixed-dim">Oficina con estilo</p></div>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary-container">edit_square</span>
+<div><p class="font-bold">Esferos &amp; Cajas</p><p class="text-xs text-secondary-fixed-dim">Regalos premium</p></div>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary-container">military_tech</span>
+<div><p class="font-bold">Medallas &amp; Sellos</p><p class="text-xs text-secondary-fixed-dim">Reconocimientos</p></div>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary-container">badge</span>
+<div><p class="font-bold">Carnets &amp; Empaques</p><p class="text-xs text-secondary-fixed-dim">Seguridad y marca</p></div>
+</div>
+</div>
+</div>
+<div class="absolute right-0 top-0 bottom-0 w-1/3 opacity-20 pointer-events-none">
+<img class="w-full h-full object-cover" data-alt="A curated collection of branded corporate gifts including a matte black water bottle, a high-end metal pen, and a premium textured notebook. The items are arranged in a modern, symmetrical flat-lay composition on a neutral gray background, lit with soft directional light to create elegant shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvoOuVCeTQi7zu4ArE35daNNQCOuqbDJr5cuqKjXrgOyx5v7KQTEj9AoXbOEhBBt2IiTsZtoEiSTHfo5Daq6OPK91r1EDkS4vtqpqV1yvJNeuZC0PiyjbkdNbXUHk1wX0paPypITXYKbUY0ErGOAFCn6ijDO87siPAm5k9uKU1K44ZweET2w3vfZEMBzvQfIANlHuQ2YRlTN3bYfp4BEmDZWBVkL5wU4D5opEM0LHZvKzsAUtuJJXq"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Large Format & Advertising -->
+<section class="space-y-12">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6">
+<div class="max-w-xl space-y-4">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Gran Formato &amp; Publicidad Exterior</h2>
+<p class="text-secondary">Impacto visual que no pasa desapercibido. Materiales resistentes a la intemperie con colores vibrantes.</p>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 group" href="#">
+                    Cotizar Proyecto <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<div class="aspect-square bg-white border border-outline-variant p-4 rounded-xl flex flex-col items-center justify-center text-center gap-4 hover:bg-primary-container/5 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">foundation</span>
+<p class="font-bold">Vallas &amp; Avisos</p>
+</div>
+<div class="aspect-square bg-white border border-outline-variant p-4 rounded-xl flex flex-col items-center justify-center text-center gap-4 hover:bg-primary-container/5 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">flag</span>
+<p class="font-bold">Pendones &amp; Banderas</p>
+</div>
+<div class="aspect-square bg-white border border-outline-variant p-4 rounded-xl flex flex-col items-center justify-center text-center gap-4 hover:bg-primary-container/5 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">ad_group</span>
+<p class="font-bold">Carteles &amp; Colombinas</p>
+</div>
+<div class="aspect-square bg-white border border-outline-variant p-4 rounded-xl flex flex-col items-center justify-center text-center gap-4 hover:bg-primary-container/5 transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary">view_carousel</span>
+<p class="font-bold">Laterales &amp; Rompetráficos</p>
+</div>
+</div>
+</section>
+<!-- Section 5: Specialized Services -->
+<section class="bg-surface-container-low p-12 rounded-3xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<h2 class="font-headline-lg text-headline-lg">Servicios Especializados</h2>
+<div class="grid grid-cols-1 gap-6">
+<div class="flex items-center gap-6 p-4 bg-white rounded-xl shadow-sm border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-3xl">book</span>
+<div>
+<p class="font-bold">Agendas &amp; Porta Agendas</p>
+<p class="text-sm text-secondary">Diseños exclusivos y acabados premium.</p>
+</div>
+</div>
+<div class="flex items-center gap-6 p-4 bg-white rounded-xl shadow-sm border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-3xl">workspace_premium</span>
+<div>
+<p class="font-bold">Diplomas, Menciones &amp; Porta Diplomas</p>
+<p class="text-sm text-secondary">Documentos oficiales de alta distinción.</p>
+</div>
+</div>
+<div class="flex items-center gap-6 p-4 bg-white rounded-xl shadow-sm border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-3xl">mail</span>
+<div>
+<p class="font-bold">Invitaciones &amp; Placas Conmemorativas</p>
+<p class="text-sm text-secondary">Momentos que merecen perdurar.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative rounded-2xl overflow-hidden h-full min-h-[400px]">
+<img class="w-full h-full object-cover" data-alt="Elegant close-up of a series of corporate awards and gold-stamped diplomas resting on a dark wood surface. The background is a soft-focus office environment with warm, professional lighting. The focal point is on the sharp, crisp gold foil lettering and the rich texture of the paper." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjRqEzqpmavdiqbqjuuzGg1TR6GtUnIQiEcuX7dOClXN0zRoJnaOevdGH8hdPvuq8r9Y74ItHW64WyWjUHVFeZwwtQHigWU1V6iCI0exyk3N5Mf9WPSLiFrn-7joe7zOCxOtZYROy40WIQQ31cuSpFw28gL17J_-MXBQUEednnZr5L-MIVmV6kGBaDI9ceFr6OsV8HJPJ6Ie2KN6Vhj5JrRUogmAMY3iMHCj5uCrr3-kkzPFmP6L4A"/>
+</div>
+</section>
+<!-- Section 6: Finishes & Materials -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-12 py-12 border-t border-outline-variant">
+<div class="space-y-6">
+<h3 class="font-headline-md text-headline-md text-primary">Acabados de Precisión</h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 border border-outline text-on-surface-variant rounded-lg font-label-md">Lincoln</span>
+<span class="px-4 py-2 border border-outline text-on-surface-variant rounded-lg font-label-md">Franjas de Seguridad</span>
+<span class="px-4 py-2 border border-outline text-on-surface-variant rounded-lg font-label-md">Autocopiantes</span>
+<span class="px-4 py-2 border border-outline text-on-surface-variant rounded-lg font-label-md">Con Adhesivo</span>
+<span class="px-4 py-2 border border-outline text-on-surface-variant rounded-lg font-label-md">Para desprender</span>
+</div>
+</div>
+<div class="space-y-6">
+<h3 class="font-headline-md text-headline-md text-primary">Materiales Premium</h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 bg-on-surface text-white rounded-lg font-label-md">Cuero</span>
+<span class="px-4 py-2 bg-on-surface text-white rounded-lg font-label-md">Plastificados</span>
+<span class="px-4 py-2 bg-on-surface text-white rounded-lg font-label-md">Tapa Dura / Blanda</span>
+<span class="px-4 py-2 bg-on-surface text-white rounded-lg font-label-md">Sellos de Seguridad</span>
+<span class="px-4 py-2 bg-on-surface text-white rounded-lg font-label-md">Metal o Madera</span>
+<span class="px-4 py-2 bg-on-surface text-white rounded-lg font-label-md">Papeles Especiales</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-margin-desktop flex flex-col md:flex-row justify-between items-start gap-gutter bg-on-surface text-white" id="contacto">
+<div class="space-y-6 max-w-sm">
+<div class="text-headline-md font-headline-lg text-primary-fixed tracking-tight">
+                Dafesa Impresores
+            </div>
+<p class="text-secondary-fixed-dim text-body-md">Soluciones profesionales de impresión que elevan el estándar de tu marca.</p>
+<div class="space-y-3">
+<a class="flex items-center gap-3 text-secondary-fixed-dim hover:text-primary-fixed transition-colors" href="mailto:dafesaimpresores@gmail.com">
+<span class="material-symbols-outlined">mail</span> dafesaimpresores@gmail.com
+                </a>
+<a class="flex items-center gap-3 text-secondary-fixed-dim hover:text-primary-fixed transition-colors" href="tel:3004345839">
+<span class="material-symbols-outlined">call</span> 300 434 5839
+                </a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div class="space-y-4">
+<h4 class="font-label-md text-white uppercase tracking-wider">Enlaces</h4>
+<nav class="flex flex-col gap-2">
+<a class="text-secondary-fixed-dim hover:text-primary-fixed hover:underline transition-all" href="#">Servicios</a>
+<a class="text-secondary-fixed-dim hover:text-primary-fixed hover:underline transition-all" href="#">Aviso de Privacidad</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-md text-white uppercase tracking-wider">Soporte</h4>
+<nav class="flex flex-col gap-2">
+<a class="text-secondary-fixed-dim hover:text-primary-fixed hover:underline transition-all" href="#">Preguntas Frecuentes</a>
+<a class="text-secondary-fixed-dim hover:text-primary-fixed hover:underline transition-all" href="#">Contacto</a>
+</nav>
+</div>
+</div>
+<div class="w-full md:w-auto flex flex-col items-start md:items-end gap-4 mt-8 md:mt-0">
+<button class="bg-primary-container text-on-primary-container px-6 py-3 rounded-full flex items-center gap-2 font-bold hover:scale-105 transition-transform">
+<span class="material-symbols-outlined">chat</span> Contáctanos ahora
+            </button>
+<p class="text-label-sm text-secondary-fixed-dim">© 2024 Dafesa Impresores. Todos los derechos reservados.</p>
+</div>
+</footer>
+<!-- Simple Scroll Interaction Script -->
+<script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple Reveal on Scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
