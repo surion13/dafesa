@@ -1,8 +1,21 @@
+import { Link } from "react-router-dom";
+
 export default function CommercialPrinting() {
   return (
     <section className="space-y-12" id="servicios">
       <div className="text-center max-w-3xl mx-auto space-y-4">
-        <h2 className="font-headline-lg text-headline-lg text-on-surface">Papelería Comercial &amp; Oficina</h2>
+        <Link
+          to="/servicioscomerciales"
+          className="inline-block group"
+          aria-label="Ir a Papelería Comercial & Oficina"
+        >
+          <h2 className="font-headline-lg text-headline-lg text-on-surface transition-colors group-hover:text-primary">
+            Papelería Comercial & Oficina
+            <span className="material-symbols-outlined align-middle ml-2 text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+              chevron_right
+            </span>
+          </h2>
+        </Link>
         <p className="text-secondary font-body-md">Soluciones integrales para la gestión administrativa y la identidad corporativa de tu negocio.</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-[var(--spacing-gutter)]">
@@ -13,7 +26,7 @@ export default function CommercialPrinting() {
           <h3 className="font-headline-md text-headline-md mb-4">Administrativo</h3>
           <ul className="space-y-3">
             <li className="flex items-center"><span className="custom-bullet"></span>Egresos e Ingresos</li>
-            <li className="flex items-center"><span className="custom-bullet"></span>Facturas &amp; Talonarios</li>
+            <li className="flex items-center"><span className="custom-bullet"></span>Facturas & Talonarios</li>
             <li className="flex items-center"><span className="custom-bullet"></span>Contratos</li>
             <li className="flex items-center"><span className="custom-bullet"></span>Formularios</li>
           </ul>
@@ -25,9 +38,9 @@ export default function CommercialPrinting() {
           <h3 className="font-headline-md text-headline-md mb-4">Identidad</h3>
           <ul className="space-y-3">
             <li className="flex items-center"><span className="custom-bullet"></span>Sobres</li>
-            <li className="flex items-center"><span className="custom-bullet"></span>Folletos &amp; Plegables</li>
-            <li className="flex items-center"><span className="custom-bullet"></span>Folders &amp; Carpetas</li>
-            <li className="flex items-center"><span className="custom-bullet"></span>Tarjetas &amp; Flyers</li>
+            <li className="flex items-center"><span className="custom-bullet"></span>Folletos & Plegables</li>
+            <li className="flex items-center"><span className="custom-bullet"></span>Folders & Carpetas</li>
+            <li className="flex items-center"><span className="custom-bullet"></span>Tarjetas & Flyers</li>
           </ul>
         </div>
         <div className="bg-white p-8 rounded-xl border border-outline-variant hover:border-primary/30 transition-all group">
@@ -36,10 +49,10 @@ export default function CommercialPrinting() {
           </div>
           <h3 className="font-headline-md text-headline-md mb-4">Editorial</h3>
           <ul className="space-y-3">
-            <li className="flex items-center"><span className="custom-bullet"></span>Libros &amp; Revistas</li>
-            <li className="flex items-center"><span className="custom-bullet"></span>Manuales &amp; Cartillas</li>
+            <li className="flex items-center"><span className="custom-bullet"></span>Libros & Revistas</li>
+            <li className="flex items-center"><span className="custom-bullet"></span>Manuales & Cartillas</li>
             <li className="flex items-center"><span className="custom-bullet"></span>Cuadernos Empresariales</li>
-            <li className="flex items-center"><span className="custom-bullet"></span>Catálogos &amp; Portafolios</li>
+            <li className="flex items-center"><span className="custom-bullet"></span>Catálogos & Portafolios</li>
           </ul>
         </div>
       </div>

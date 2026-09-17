@@ -1,27 +1,40 @@
+import { Link } from "react-router-dom";
+
 export default function SpecializedServices() {
   return (
     <section className="bg-surface-container-low p-12 rounded-3xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       <div className="space-y-8">
-        <h2 className="font-headline-lg text-headline-lg">Servicios Especializados</h2>
+        <Link
+          to="/serviciosespecializados"
+          className="inline-block group"
+          aria-label="Ir a Servicios Especializados"
+        >
+          <h2 className="font-headline-lg text-headline-lg transition-colors group-hover:text-primary">
+            Servicios Especializados
+            <span className="material-symbols-outlined align-middle ml-2 text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+              chevron_right
+            </span>
+          </h2>
+        </Link>
         <div className="grid grid-cols-1 gap-6">
           <div className="flex items-center gap-6 p-4 bg-white rounded-xl shadow-sm border border-outline-variant">
             <span className="material-symbols-outlined text-primary text-3xl">book</span>
             <div>
-              <p className="font-bold">Agendas &amp; Porta Agendas</p>
+              <p className="font-bold">Agendas & Porta Agendas</p>
               <p className="text-sm text-secondary">Diseños exclusivos y acabados premium.</p>
             </div>
           </div>
           <div className="flex items-center gap-6 p-4 bg-white rounded-xl shadow-sm border border-outline-variant">
             <span className="material-symbols-outlined text-primary text-3xl">workspace_premium</span>
             <div>
-              <p className="font-bold">Diplomas, Menciones &amp; Porta Diplomas</p>
+              <p className="font-bold">Diplomas, Menciones & Porta Diplomas</p>
               <p className="text-sm text-secondary">Documentos oficiales de alta distinción.</p>
             </div>
           </div>
           <div className="flex items-center gap-6 p-4 bg-white rounded-xl shadow-sm border border-outline-variant">
             <span className="material-symbols-outlined text-primary text-3xl">mail</span>
             <div>
-              <p className="font-bold">Invitaciones &amp; Placas Conmemorativas</p>
+              <p className="font-bold">Invitaciones & Placas Conmemorativas</p>
               <p className="text-sm text-secondary">Momentos que merecen perdurar.</p>
             </div>
           </div>

@@ -13,21 +13,21 @@ export default function Navbar({ whatsappUrl }) {
       <nav className="hidden md:flex items-center gap-8">
         <a
           className="text-primary font-bold border-b-2 border-primary font-label-md text-label-md"
-          href="#servicios"
+          href="/#servicios"
         >
           Servicios
         </a>
 
         <a
           className="text-secondary hover:text-primary transition-colors font-label-md text-label-md"
-          href="#nosotros"
+          href="/#nosotros"
         >
           Nosotros
         </a>
 
         <a
           className="text-secondary hover:text-primary transition-colors font-label-md text-label-md"
-          href="#contacto"
+          href="/#contacto"
         >
           Contacto
         </a>

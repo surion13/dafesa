@@ -5,7 +5,7 @@ export default function Footer() {
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
-    <footer id="contacto" className="w-full py-12 px-[var(--spacing-margin-desktop)] flex flex-col md:flex-row justify-between items-start gap-[var(--spacing-gutter)] bg-on-surface text-white" id="contacto">
+    <footer id="contacto" className="w-full py-12 px-[var(--spacing-margin-desktop)] flex flex-col md:flex-row justify-between items-start gap-[var(--spacing-gutter)] bg-on-surface text-white">
       <div className="space-y-6 max-w-sm">
         <div className="text-headline-md font-headline-lg text-primary-fixed tracking-tight">
           Dafesa Impresores
@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="space-y-4">
           <h4 className="font-label-md text-white uppercase tracking-wider">Enlaces</h4>
           <nav className="flex flex-col gap-2">
-            <a className="text-secondary-fixed-dim hover:text-primary-fixed hover:underline transition-all" href="#">Servicios</a>
+            <a className="text-secondary-fixed-dim hover:text-primary-fixed hover:underline transition-all" href="/#servicios">Servicios</a>
             <a className="text-secondary-fixed-dim hover:text-primary-fixed hover:underline transition-all" href="#">Aviso de Privacidad</a>
           </nav>
         </div>
@@ -32,7 +32,7 @@ export default function Footer() {
           <h4 className="font-label-md text-white uppercase tracking-wider">Soporte</h4>
           <nav className="flex flex-col gap-2">
             <a className="text-secondary-fixed-dim hover:text-primary-fixed hover:underline transition-all" href="#">Preguntas Frecuentes</a>
-            <a className="text-secondary-fixed-dim hover:text-primary-fixed hover:underline transition-all" href="#">Contacto</a>
+            <a className="text-secondary-fixed-dim hover:text-primary-fixed hover:underline transition-all" href="/#contacto">Contacto</a>
           </nav>
         </div>
       </div>
