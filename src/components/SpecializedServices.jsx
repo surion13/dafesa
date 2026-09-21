@@ -17,27 +17,27 @@ export default function SpecializedServices() {
           </h2>
         </Link>
         <div className="grid grid-cols-1 gap-6">
-          <div className="flex items-center gap-6 p-4 bg-white rounded-xl shadow-sm border border-outline-variant">
+          <Link to="/serviciosespecializados" className="flex items-center gap-6 p-4 bg-white rounded-xl shadow-sm border border-outline-variant hover:border-primary/100">
             <span className="material-symbols-outlined text-primary text-3xl">book</span>
             <div>
               <p className="font-bold">Agendas & Porta Agendas</p>
               <p className="text-sm text-secondary">Diseños exclusivos y acabados premium.</p>
             </div>
-          </div>
-          <div className="flex items-center gap-6 p-4 bg-white rounded-xl shadow-sm border border-outline-variant">
+          </Link>
+          <Link to="/serviciosespecializados" className="flex items-center gap-6 p-4 bg-white rounded-xl shadow-sm border border-outline-variant hover:border-primary/100">
             <span className="material-symbols-outlined text-primary text-3xl">workspace_premium</span>
             <div>
               <p className="font-bold">Diplomas, Menciones & Porta Diplomas</p>
               <p className="text-sm text-secondary">Documentos oficiales de alta distinción.</p>
             </div>
-          </div>
-          <div className="flex items-center gap-6 p-4 bg-white rounded-xl shadow-sm border border-outline-variant">
+          </Link>
+          <Link to="/serviciosespecializados" className="flex items-center gap-6 p-4 bg-white rounded-xl shadow-sm border border-outline-variant hover:border-primary/100">
             <span className="material-symbols-outlined text-primary text-3xl">mail</span>
             <div>
               <p className="font-bold">Invitaciones & Placas Conmemorativas</p>
               <p className="text-sm text-secondary">Momentos que merecen perdurar.</p>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
       <div className="relative rounded-2xl overflow-hidden h-full min-h-[400px]">

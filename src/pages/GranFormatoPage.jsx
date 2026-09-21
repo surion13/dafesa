@@ -41,8 +41,8 @@ const GRUPOS = [
         title: "Pendones & Banderas",
         description: "Pendones retractiles y banderas publicitarias para puntos de venta, ferias, eventos y exhibiciones con soporte incluido.",
         icon: "flag",
-        image: "/productos/pendones_banderas.jpg",
-        images: ["/productos/pendones_banderas.jpg"],
+        image: "/productos/pendon.webp",
+        images: ["/productos/pendon.webp"],
         badge: "Alta Visibilidad",
         materialsTitle: "Sustratos disponibles:",
         papers: [

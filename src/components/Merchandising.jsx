@@ -28,11 +28,11 @@ export default function Merchandising() {
         </h2>
       </Link>
 
-      <div className="bento-grid">
+      <div className="bento-grid ">
         {/* Textiles */}
         <Link
           to="/merchandising"
-          className="col-span-12 md:col-span-4 bg-white border border-outline-variant p-6 rounded-xl flex flex-col justify-between"
+          className="col-span-12 md:col-span-4 bg-white border border-outline-variant p-6 rounded-xl flex flex-col justify-between hover:border-primary/100"
         >
           <div>
             <h4 className="font-headline-md text-headline-md mb-2">Textiles</h4>

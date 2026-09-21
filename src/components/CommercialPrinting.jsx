@@ -19,7 +19,7 @@ export default function CommercialPrinting() {
         <p className="text-secondary font-body-md">Soluciones integrales para la gestión administrativa y la identidad corporativa de tu negocio.</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-[var(--spacing-gutter)]">
-        <div className="bg-white p-8 rounded-xl border border-outline-variant hover:border-primary/30 transition-all group">
+        <Link to="/servicioscomerciales" className="bg-white p-8 rounded-xl border border-outline-variant hover:border-primary/100 transition-all group">
           <div className="w-12 h-12 bg-primary-container/20 text-primary flex items-center justify-center rounded-lg mb-6 group-hover:scale-110 transition-transform">
             <span className="material-symbols-outlined">receipt_long</span>
           </div>
@@ -30,8 +30,8 @@ export default function CommercialPrinting() {
             <li className="flex items-center"><span className="custom-bullet"></span>Contratos</li>
             <li className="flex items-center"><span className="custom-bullet"></span>Formularios</li>
           </ul>
-        </div>
-        <div className="bg-white p-8 rounded-xl border border-outline-variant hover:border-primary/30 transition-all group">
+        </Link>
+        <Link to="/servicioscomerciales" className="bg-white p-8 rounded-xl border border-outline-variant hover:border-primary/100 transition-all group">
           <div className="w-12 h-12 bg-primary-container/20 text-primary flex items-center justify-center rounded-lg mb-6 group-hover:scale-110 transition-transform">
             <span className="material-symbols-outlined">folder_open</span>
           </div>
@@ -42,8 +42,8 @@ export default function CommercialPrinting() {
             <li className="flex items-center"><span className="custom-bullet"></span>Folders & Carpetas</li>
             <li className="flex items-center"><span className="custom-bullet"></span>Tarjetas & Flyers</li>
           </ul>
-        </div>
-        <div className="bg-white p-8 rounded-xl border border-outline-variant hover:border-primary/30 transition-all group">
+        </Link>
+        <Link to="/servicioscomerciales" className="bg-white p-8 rounded-xl border border-outline-variant hover:border-primary/100 transition-all group">
           <div className="w-12 h-12 bg-primary-container/20 text-primary flex items-center justify-center rounded-lg mb-6 group-hover:scale-110 transition-transform">
             <span className="material-symbols-outlined">menu_book</span>
           </div>
@@ -54,7 +54,7 @@ export default function CommercialPrinting() {
             <li className="flex items-center"><span className="custom-bullet"></span>Cuadernos Empresariales</li>
             <li className="flex items-center"><span className="custom-bullet"></span>Catálogos & Portafolios</li>
           </ul>
-        </div>
+        </Link>
       </div>
     </section>
   );

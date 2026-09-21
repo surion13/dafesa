@@ -21,22 +21,22 @@ export default function LargeFormat() {
         </div>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-[var(--spacing-gutter)]">
-        <div className="aspect-square bg-white border border-outline-variant p-4 rounded-xl flex flex-col items-center justify-center text-center gap-4 hover:bg-primary-container/5 transition-colors">
+        <Link to="/granformato" className="aspect-square bg-white border border-outline-variant p-4 rounded-xl flex flex-col items-center justify-center text-center gap-4 hover:bg-primary-container/5 hover:border-primary/100 transition-colors">
           <span className="material-symbols-outlined text-4xl text-primary">foundation</span>
           <p className="font-bold">Vallas & Avisos</p>
-        </div>
-        <div className="aspect-square bg-white border border-outline-variant p-4 rounded-xl flex flex-col items-center justify-center text-center gap-4 hover:bg-primary-container/5 transition-colors">
+        </Link>
+        <Link to="/granformato" className="aspect-square bg-white border border-outline-variant p-4 rounded-xl flex flex-col items-center justify-center text-center gap-4 hover:bg-primary-container/5 hover:border-primary/100 transition-colors">
           <span className="material-symbols-outlined text-4xl text-primary">flag</span>
           <p className="font-bold">Pendones & Banderas</p>
-        </div>
-        <div className="aspect-square bg-white border border-outline-variant p-4 rounded-xl flex flex-col items-center justify-center text-center gap-4 hover:bg-primary-container/5 transition-colors">
+        </Link>
+        <Link to="/granformato" className="aspect-square bg-white border border-outline-variant p-4 rounded-xl flex flex-col items-center justify-center text-center gap-4 hover:bg-primary-container/5 hover:border-primary/100 transition-colors">
           <span className="material-symbols-outlined text-4xl text-primary">ad_group</span>
           <p className="font-bold">Carteles & Colombinas</p>
-        </div>
-        <div className="aspect-square bg-white border border-outline-variant p-4 rounded-xl flex flex-col items-center justify-center text-center gap-4 hover:bg-primary-container/5 transition-colors">
+        </Link>
+        <Link to="/granformato" className="aspect-square bg-white border border-outline-variant p-4 rounded-xl flex flex-col items-center justify-center text-center gap-4 hover:bg-primary-container/5 hover:border-primary/100 transition-colors">
           <span className="material-symbols-outlined text-4xl text-primary">view_carousel</span>
           <p className="font-bold">Laterales & Rompetráficos</p>
-        </div>
+        </Link>
       </div>
     </section>
   );
